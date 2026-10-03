@@ -95,7 +95,4 @@ salon_number = "27681103101"
 whatsapp_url = f"https://wa.me{salon_number}?text={encoded_message}"
 
 # Clickable Booking Action Button
-if st.button("💝 REQUEST APPOINTMENT VIA WHATSAPP"):
-    st.markdown(f'<meta http-equiv="refresh" content="0;URL=\'{whatsapp_url}\'" />', unsafe_allow_html=True)
-    st.success("Opening WhatsApp to send your request instantly...")
-    st.markdown(f"[Click here if it doesn't redirect automatically]({whatsapp_url})")
+st.link_button("💝 REQUEST APPOINTMENT VIA WHATSAPP", whatsapp_url)
