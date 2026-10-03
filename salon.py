@@ -92,7 +92,7 @@ encoded_message = urllib.parse.quote(raw_message)
 
 # Palmier Rose verified WhatsApp Business line
 salon_number = "27681103101"
-whatsapp_url = f"https://wa.me{salon_number}?text={encoded_message}"
+whatsapp_url = f"https://wa.me/{salon_number}?text={encoded_message}"
 
 # Clickable Booking Action Button
 st.link_button("💝 REQUEST APPOINTMENT VIA WHATSAPP", whatsapp_url)
